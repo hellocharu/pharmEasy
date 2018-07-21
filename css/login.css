@@ -1,0 +1,116 @@
+.pharmeasy-bg{
+    background: lightblue;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logincontent{
+    width: 30%;
+    border: 2px solid red;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+    /*height: 900px;*/
+    background: yellow;
+}
+
+.logincontent h2{
+    text-align: center;
+}
+
+.logincontent input{
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+}
+
+ label{
+    color: black;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.loginbtn{
+    max-width: 120px;
+    background: red;
+    height: 30px;
+    margin-top: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+
+
+.wrapper-dropdown-2 {
+    /* Size and position */
+    position: relative; /* Enable absolute positioning for children and pseudo elements */
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px 15px;
+
+    /* Styles */
+    background: #fff;
+    border-left: 5px solid grey;
+    cursor: pointer;
+    outline: none;
+}
+
+.wrapper-dropdown-2:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: grey transparent;
+}
+
+
+
+.wrapper-dropdown-2 .dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    border-left: 5px solid;
+    padding: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper-dropdown-2 .dropdown li:nth-child(1) a { 
+    border-left-color: #00ACED;
+}
+
+.wrapper-dropdown-2 .dropdown li:nth-child(2) a {
+    border-left-color: #4183C4;
+}
+
+.wrapper-dropdown-2 .dropdown li:nth-child(3) a {
+    border-left-color: #3B5998;
+}
+
+.wrapper-dropdown-2 .dropdown li i {
+    margin-right: 5px;
+    color: inherit;
+    vertical-align: middle;
+}
+
+/* Hover state */
+
+.wrapper-dropdown-2 .dropdown li:hover a {
+    color: grey;
+}
+
+
+.wrapper-dropdown-2.active:after {
+    border-width: 0 6px 6px 6px;
+}
+
+.wrapper-dropdown-2.active .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+}
+

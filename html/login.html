@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link href="../css/login.css" rel="stylesheet">
+    <link href="../css/dropdown.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+</head>
+<body>
+    <div class="pharmeasy-bg">
+        <div class="logincontent">
+            <form>
+                <h2>Login</h2>
+                 <label for="txtUserName">
+                    Role:</label>
+                <div id="dropdown" class="ddmenu">
+                    <div>Choose a role</div>
+                  <ul>
+                    <li><a href="#">Doctor</a></li>
+                    <li><a href="#">Patient</a></li>
+                    <li><a href="#">Pharmacist</a></li>
+                  </ul>
+                </div>
+
+                <label for="txtUserName">
+                    Username:</label>
+                <input type="text" id="txtUserName" name="txtUserName" />
+                <label for="txtPassword">
+                    Password:</label>
+                <input type="password" id="txtPassword" name="txtPassword" />
+                <input type="submit" class="loginbtn" value="Login" id="btnSubmit" data-target-doctor="doctor.html" data-target-patient="patient.html" data-target-pharmacist="pharmacist.html"/>
+            </form>            
+    </div>     
+    </div>
+    <script src="../data/data.js"></script>
+    <script src="../js/app.js"></script>
+</body> 
+</html>

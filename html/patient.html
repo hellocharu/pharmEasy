@@ -1,0 +1,56 @@
+<!doctype>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>javascript coding exam</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome <span></span></h1>
+        <h3>Please verify these documents</h3>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#pending">Pending Requests</a></li>
+            <li><a data-toggle="tab" href="#approved">Approved Requests</a></li>
+        </ul>
+        
+        <div class="tab-content">
+            <div id="pending" class="tab-pane fade in active">
+                <div class="contents">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Prescription</th>
+                                <th>Requested By</th>
+                                <th>Approve?</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            
+            <div id="approved" class="tab-pane fade">
+                <div class="contents">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Prescription</th>
+                                <th>Requested By</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../data/data.js"></script>
+    <script src="../js/patient.js"></script>
+</body>
+
+</html>
