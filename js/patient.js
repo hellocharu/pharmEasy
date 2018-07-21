@@ -23,7 +23,7 @@ function CreateTableFromJSON(TABLE_DATA) {
     //storing the prescriptions
     prescriptions = current_patient.prescriptions;
     
-    
+    //iterating through the prescriptions under the patient's name and showing their status
     for(var i=0; i< prescriptions.length; i++){
         
         var doctor_data = prescriptions[i].action.doctors,

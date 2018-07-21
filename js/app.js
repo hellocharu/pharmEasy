@@ -1,12 +1,12 @@
 
-
+// load the data from the local storage on load of page
 $(document).ready(function(){
     if (localStorage.getItem("added-items") === null) {
         localStorage.setItem('added-items', JSON.stringify(data));
     }
 });
 
-
+// this handles the dropdown
 $("#dropdown").on("click", function(e){
   if($(this).hasClass("open")) {
     $(this).removeClass("open");
@@ -22,7 +22,7 @@ $("#dropdown li a").on('click', function(e){
 });
 
 
-
+// action on click of login button
 $('.loginbtn').on("click",function(e){
     e.preventDefault();
     
@@ -40,6 +40,7 @@ $('.loginbtn').on("click",function(e){
         localStorage.setItem('added-items', JSON.stringify(added_items));  
     }
     
+    // open page based on roles
     
     if(role == "doctor"){
         var url = $(this).data('target-doctor');

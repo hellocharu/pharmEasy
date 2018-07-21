@@ -17,6 +17,7 @@ function CreateTableFromJSON(TABLE_DATA) {
     // adding the specific user heading
     document.querySelector('.container h1 span').innerHTML = current_doctor.name + ",";
     
+    // add data based on the current user(doctor) and the patients under it and their documents
     for(var i=0;i<current_doctor.patients.length;i++){
         var patient_id = current_doctor.patients[i];
         
@@ -42,6 +43,8 @@ function CreateTableFromJSON(TABLE_DATA) {
             }
         }
     }
+    
+    // create table dynamically based on data pushed in col variable
     for(var i=0;i<col.length;i++){
         var tr = tbody.insertRow(-1);
         for(var key in col[i]){
@@ -80,9 +83,11 @@ function CreateTableFromJSON(TABLE_DATA) {
         divContainer.appendChild(tbody);
 }
 
+
+// this creates table from the data in local storage
 CreateTableFromJSON(JSON.parse(localStorage.getItem('added-items')));
 
-
+// this function modifies the content of table based on new data i.e. after click of request button
 function modifyTable(data,patient_id,prescription_id){
     var current_doctor_id = data.session_info.id;
     
